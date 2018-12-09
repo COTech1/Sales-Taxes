@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+//This program computes the sales tax for a given amount
+
+float salesTX (float rate, int total)
+{
+	float newtotal, tax;
+	tax = rate * total;
+	newtotal = total + tax;
+	return newtotal;	
+}
+int main ()
+{
+		float finaltotal;
+		finaltotal = salesTX (0.06, 45.56);
+		cout << "The total cost including sales tax is " << finaltotal;
+		return 0;
+}
